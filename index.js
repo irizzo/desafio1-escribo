@@ -1,8 +1,8 @@
 const { getDivisiblePredecessors, sumNumbersInArray } = require('./helpers');
 
 function sumDivisiblePredecessors(startNumber) {
-	// verificar se o número é um inteiro | 
-	if (!Number.isInteger(startNumber)) { // TODO: verificar se é positivo
+	// verificar se o número é um inteiro e positivo | check if number is an integer and positive 
+	if (!Number.isInteger(startNumber) || startNumber < 0) {
 		console.log('informed number is not an integer');
 		return undefined
 	}
@@ -20,16 +20,11 @@ function sumDivisiblePredecessors(startNumber) {
 	}
 
 	const divisiblePredecessors = getDivisiblePredecessors(startNumber);
-	
-	// 
-	// console.log(`divisiblePredecessors = ${divisiblePredecessors}`);
 
 	const divisiblePredecessorsSum = sumNumbersInArray(divisiblePredecessors);
-	// 
-	// console.log(`divisiblePredecessorsSum = ${divisiblePredecessorsSum}`);
 
 	return divisiblePredecessorsSum;
 }
 
-const result = sumDivisiblePredecessors(2);
+const result = sumDivisiblePredecessors(5672);
 console.log(`The sum of all divisible predecessors is = ${result}`);

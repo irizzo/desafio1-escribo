@@ -1,4 +1,4 @@
-// verificar se um número é divisível por 3 | verify if number is divisible by 3
+// verificar se um número é divisível por 3 | check if number is divisible by 3
 function isDivisibleByThree(number) {
 	const result = number % 3;
 
@@ -9,7 +9,7 @@ function isDivisibleByThree(number) {
 	return false
 }
 
-// verificar se um número é divisível por 5 | verify if number is divisible by 5
+// verificar se um número é divisível por 5 | check if number is divisible by 5
 function isDivisibleByFive(number) {
 	const result = number % 5;
 
@@ -36,6 +36,7 @@ function getDivisiblePredecessors(number) {
 	return divisiblePredecessors;
 }
 
+// Somar os valores em um array | Sum all the values in an array
 function sumNumbersInArray(arr) {
 	let sum = 0;
 
